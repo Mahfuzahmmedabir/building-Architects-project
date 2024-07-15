@@ -1,6 +1,50 @@
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+
+/* Dark 02 */
+.gray-color {
+  color: #424242;
+}
+
+/* Dark 03 */
+.light-gray {
+  color: #727272;
+}
+.bg-light{
+  
+  background: rgba(255, 144, 14, 0.1);
+}
+
+
+/* header styles */
+
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+.nav-link {
+  text-decoration: none;
+}
+.navbar .banner{
+  width: 1440px;
+  margin: 0 auto;
 }
