@@ -8,9 +8,23 @@
   margin: 0;
   padding: 0;
 } */
+
+.display-none {
+  display: none;
+}
 /* shared styles */
+.section-title {
+  font-size: 2.8rem;
+}
+.section-desecription {
+  font-size: 18px;
+  color: #727272;
+  margin-top: -20px;
+  font-weight: 400;
+}
 .display-flex {
   display: flex;
+  font-weight: 700;
 }
 
 /* Dark 02 */
@@ -25,7 +39,7 @@
 .bg-light {
   background: rgba(255, 144, 14, 0.1);
 }
-main > section{
+main > section {
   margin-top: 130px;
 }
 .primary-btn {
@@ -38,7 +52,7 @@ main > section{
   border: none;
   cursor: pointer;
 }
-main{
+main {
   max-width: 1445px;
   margin: 0 auto;
 }
@@ -89,42 +103,102 @@ main{
   margin-bottom: 80px;
   width: 100%;
 }
-@media screen and(max-width:576px) {
-  .navbar, .nav-links {
-    color: red;
-   flex-direction: column;
-  }
-}
-/* team and feature related styles */
-.teams{
-  /* margin-top: 100px; */
-}
 
-.team-imges-container{
+/* team and feature related styles */
+
+
+.team-imges-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
-.our-features{
-   max-width: 550px;
-   margin: 100px 50px;
+.our-features {
+  max-width: 550px;
+  margin: 100px 50px;
 }
-.features-title{
+.features-title {
   font-size: 2.8rem;
 }
-.features-desecription{
-  font-size: 18px;
+
+#quick-list {
   color: #727272;
-  margin-top: -20px;
-}
-#quick-list{
-  color:#727272;
   font-weight: 700;
 }
-.of-our{
+.of-our {
   font-weight: 800;
 }
 
-.reatures{
+.freatures {
   color: #ff900e;
+}
+/* Features you will love & enjoy  */
+.some-acts {
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.card-conternir {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fact-card {
+  width: 240px;
+  height: 240px;
+  border: 2px solid #ff900e;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div {
+  margin-top: 20px;
+}
+.fact-number {
+  font-size: 2.8rem;
+  margin-top: 0px;
+  color: #424242;
+}
+.fact-name {
+  margin-top: -50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #727272;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+  }
+  .brand {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .teams {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .team-imges-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  .our-features {
+    margin: 20px;
+  }
+  .card-conternir {
+    grid-template-columns: repeat(1,1fr);
+   margin: 0 auto;
+    row-gap: 20px;
+
+  }
+  .some-acts{
+    width: 100%;
+    text-align: center;
+  }
+  .fact-card{
+    margin: 0 auto;
+
+  }
 }
