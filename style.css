@@ -166,7 +166,26 @@ div {
   font-weight: 500;
   color: #727272;
 }
+/* Our Sponspors */
+.title-and-ded{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
 
+.compnay-sepnsor{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 100px;
+
+}
+.section-title{
+  color: #424242;
+}
+.compnay-sepnsor img{
+filter: grayscale(100%);
+}
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links {
@@ -199,6 +218,13 @@ div {
   }
   .fact-card{
     margin: 0 auto;
+
+  }
+  .compnay-sepnsor {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    /* margin-left:150px; */
+    justify-items: center;/
 
   }
 }
