@@ -21,6 +21,7 @@
   color: #727272;
   margin-top: -20px;
   font-weight: 400;
+  width: 100%;
 }
 .display-flex {
   display: flex;
@@ -106,7 +107,6 @@ main {
 
 /* team and feature related styles */
 
-
 .team-imges-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -132,6 +132,52 @@ main {
   color: #ff900e;
 }
 /* Features you will love & enjoy  */
+.features-love-enjoy {
+  gap: 200px;
+}
+#feature-section-title {
+  border-left: 4px solid #ff900e;
+  font-size: 2.8rem;
+  padding-left: 20px;
+}
+.section-desecription1 {
+  font-size: 16px;
+  color: #727272;
+  margin-top: -20px;
+  font-weight: 400;
+  width: 100%;
+  margin-left: 40px;
+}
+.box-card {
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  width: 100%;
+}
+
+.title1 {
+  color: rgb(19, 19, 19);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.description {
+  color: rgb(114, 114, 114);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Features you will love & enjoy end  */
+
+/* some-acts */
 .some-acts {
   width: 700px;
   margin-bottom: 50px;
@@ -167,24 +213,23 @@ div {
   color: #727272;
 }
 /* Our Sponspors */
-.title-and-ded{
+.title-and-ded {
   width: 500px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
 }
 
-.compnay-sepnsor{
+.compnay-sepnsor {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 100px;
-
 }
-.section-title{
+.section-title {
   color: #424242;
 }
-.compnay-sepnsor img{
-filter: grayscale(100%);
+.compnay-sepnsor img {
+  filter: grayscale(100%);
 }
 @media screen and (max-width: 576px) {
   .navbar,
@@ -207,24 +252,25 @@ filter: grayscale(100%);
     margin: 20px;
   }
   .card-conternir {
-    grid-template-columns: repeat(1,1fr);
-   margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
     row-gap: 20px;
-
   }
-  .some-acts{
+  .some-acts {
     width: 100%;
     text-align: center;
   }
-  .fact-card{
+  .fact-card {
     margin: 0 auto;
-
+  }
+  .section-desecription {
+    width: 400px;
+    margin: 0 auto;
   }
   .compnay-sepnsor {
     grid-template-columns: 1fr;
     row-gap: 50px;
-    /* margin-left:150px; */
-    justify-items: center;/
 
+    justify-items: center;
   }
 }
